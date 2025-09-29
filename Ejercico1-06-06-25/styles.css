@@ -1,0 +1,27 @@
+
+h1 {
+  color: grey;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+#titulo2{
+  color: grey;
+}
+
+#tituloprincipal{
+  color:blue;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+p {
+  background-color: #d6b4fd;  
+  padding: 10px;
+  border-radius: 4px;
+  color: #000000;
+  margin-bottom: 1px;
+  
+}

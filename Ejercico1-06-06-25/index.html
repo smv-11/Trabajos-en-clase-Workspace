@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sistemas de Medida en CSS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<center>
+  <h1 id="tituloprincipal">Sistemas de Medida en CSS</h1>
+
+</center>
+<hr>
+<center>
+  <h1 class="titulo2">Unidades de Medida Absolutas en CSS</h1>
+<p>hacen referencia a las unidades que no cambian, esas que en todos lo contextos son iguales.</p>
+</center>
+<ul>
+  <li>-in: hace referencia a las pulgadas, que son iguales a 2.54cm.</li>
+  <li>-cm: se refiere a los centímetros.</li>
+  <li>-mm: hace referencia a los milímetros.</li>
+  <li>-q: se refiere a un cuarto de la unidad mm. 1q=0.248mm.</li>
+  <li>-pt: un punto es igual a 1/72 de una pulgada o 0.35mm.</li>
+  <li>-pc: una pica es igual a 12 puntos, o sea 4.23mm.</li>
+  <li>-px: esta etiqueta se refiere a los píxeles que, aunque son absolutos (0.26mm), también son relativos a la densidad de la pantalla.</li>
+</ul>
+<hr>
+<center>
+  <h1 class="titulo2">Unidades de Medida Relativas en CSS</h1>
+<p>Dependen del elemento o factor al que hagan referencia. Aunque pueden ser inicialmente más complejas, algunos prefieren las unidades de medidas de css relativas porque los tamaños de los elementos dependen el uno del otro.</p>
+</center>
+<ul>
+  <li>-em: Esta unidad es relativa al tamaño de letra o font size establecida en el navegador. Su nombre es em porque el tamaño de letra se basa en el tamaño de la letra eme. A menos que haya sido modificada por el usuario, normalmente este tamaño es de 16px.</li>
+  <li>-ex: Esta unidad es relativa a la altura de la «x» del elemento. También se conoce por ser más o menos la mitad del tamaño de la fuente del navegador o 0.5em.</li>
+  <li>-ch: Conocido en inglés como zero width, esta unidad de medida es relativa al tamaño del ancho del cero en la fuente del navegador.</li>
+  <li>-%: Esta unidad es relativa al tamaño del elemento padre.</li>
+  <li>-rem: La unidad rem o root em es similar a la unidad em, pero, en vez de tomar como base el tamaño de letra del navegador, la unidad em toma el tamaño base del documento HTML. Este tamaño se personaliza bajo la etiqueta :root {font-size}. De este modo, podemos usar rem para dimensionar nuestros elementos con un múltiplo del tamaño base.</li>
+</ul>
+<hr>
+<center>
+  <h1 class="titulo2">Unidades del Viewport en CSS</h1>
+<p>Que es el espacio o trozo de pantalla donde se renderiza y se muestra la página web. Estas unidades sirven para dimensionar la pantalla y organizar los elementos dentro de esta.</p>
+</center>
+<ul>
+  <li>-vw: Como sigla de la unidad en inglés viewport width, esta unidad es relativa al ancho del viewport.</li>
+  <li>-vh: Como sigla de la unidad en inglés viewport height, esta unidad es relativa a la altura del viewport.</li>
+  <li>-vmin: Esta unidad vmin css, también conocida como viewport minimum, es relativa al factor que sea más pequeño entre el ancho y al alto del viewport.</li>
+  <li>-vmax: Esta unidad, conocida como viewport maximum, es relativa al factor que sea más grande entre el ancho y el alto del viewport. Junto con vmin, esta unidad puede ser muy útil si queremos que nuestros diseños sean flexibles y se adapten al tamaño visible de la página web.</li>
+</ul>
+
+</body>
+</html>

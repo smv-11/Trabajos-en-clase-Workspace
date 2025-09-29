@@ -1,0 +1,36 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 30px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  color: #000000;
+}
+
+h2 {
+  margin-top: 40px;
+  color: rgb(0, 0, 0);
+}
+
+ul {
+  margin-left: 20px;
+}
+
+.objetivo {
+  background-color: #e8f5e9;
+  border: 5px solid rgb(52, 73, 94);;
+  padding: 20px;
+  margin: 20px ;
+  width: 80ch;
+}
+
+.regla {
+  display: inline-block;
+  width: 30;
+  margin: 10px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 5px solid rgb(52, 73, 94);
+  vertical-align: top;
+}

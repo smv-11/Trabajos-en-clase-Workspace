@@ -1,0 +1,100 @@
+table {
+  margin: 30px auto;
+  width: 50;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 50px ;
+}
+
+td {
+  width: 120ch;
+  height: 20px;
+  font-weight: 200px;
+  color: rgb(0, 0, 0);
+}
+
+#sorpresa {
+    border-style: solid;
+    background-color: #fdc945; 
+    border: 20px solid;
+    border-color: #264653;
+    padding: 20px;
+    margin: 20px;
+}
+#alegria {
+    border-style: solid;
+    background-color: #eeda67; 
+    border: 50px solid;
+    border-bottom: 10px solid;
+    border-right: 10px solid;
+    border-color: #ff8800;
+    padding: 10px;
+    margin: 20px;
+}
+ #confianza {
+    border-style: solid;
+    background-color: #ffe571; 
+    border: 10px solid;
+    border-bottom: 50px solid;
+    border-right: 40px solid;
+    border-color: #e76f51; 
+    padding: 30px;
+    margin: 10px;
+ }
+#esperanza {
+    border-style: solid;
+    background-color: rgb(196, 255, 181);
+    border: 10px solid;
+    border-bottom: 50px solid;
+    border-right: 60px solid;
+    border-color: #dab380;
+    padding: 20px;
+    margin: 20px;
+}
+#amor {
+    border-style: solid;
+    background-color: #ff006f; 
+    border: 50px solid;
+    border-color: #66fff7;
+    padding: 50px;
+    margin: 50px;
+}
+#tristeza{
+    border-style: dotted;
+    background-color: #3700ff; 
+    border: 10px dotted;
+    border-color: #ff8800;
+    padding: 50px;
+    margin: 30px;
+}
+#miedo {
+    border-style: dotted;
+    background-color: #7a7a7a; 
+    border: 10px dotted;
+    border-bottom: 30px dotted;
+    border-right: 30px dotted;
+    border-color: #000000;
+    padding: 20px;
+    margin: 20px;
+}
+#ira {
+    border-style: dotted;
+    background-color: #d62828; 
+    border: 30px dotted;
+    border-color: #ff6a6a;
+    padding: 50px;
+    margin: 30px;
+    
+}
+#asco {
+    border-style: dotted;
+    background-color: #6a994e; 
+    border: 10px dotted;
+    border-bottom: 30px dotted;
+    border-right: 20px dotted;
+    border-color: #5c4417;
+    padding: 50px;
+    margin: 30px;
+
+}
+

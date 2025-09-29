@@ -1,0 +1,12 @@
+.estudiante{
+    background-color: rgb(158, 158, 231);
+}
+
+.nombre{
+    display: inline-block;
+    font-size: large;
+}
+
+.apellido{
+    display: inline;
+}

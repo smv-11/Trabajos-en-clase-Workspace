@@ -1,0 +1,26 @@
+.hora {
+  display: inline-block;
+  background-color: #f1e2bb;
+  color: #333333; 
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hora2 {
+  display: inline-block;
+  background-color: rgb(100, 241, 100); 
+  color: rgb(0, 0, 0); 
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.tarea {
+  display: inline-block;
+  background-color: gray; 
+  color: rgb(255, 255, 255); 
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: normal;
+}

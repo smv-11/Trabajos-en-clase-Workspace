@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventuras Lingüi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            font-family: "Faculty Glyphic", sans-serif;
+            background-color: white;
+        }
+        .navbar {
+            background-color: #9393e2;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .nav-link:hover {
+            color: #00e600 !important;
+        }
+        .carousel-inner img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center center;
+            border-radius: 10px;
+        }
+        .carousel-indicators [data-bs-target] {
+            background-color: #00e600;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #00e600;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        .Bienvenida {
+            background-color: #9393e2;
+            color: white;
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            margin: 2rem auto;
+            width: 80%;
+            box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.5);
+        }
+        .TextBienvenida {
+            font-size: 1.5rem;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .card-title {
+            color: #9393e2;
+            font-weight: bold;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            object-position: center center;
+            border-radius: 15px 15px 0 0;
+        }
+        .btn-verde {
+            background-color: #00e600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .btn-verde:hover {
+            background-color: #00cc00;
+        }
+        footer {
+            background-color: #9393e2;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Imagenes/Logo.jpeg" alt="Logo" width="40" class="d-inline-block align-text-top">
+                Aventuras Lingüi
+            </a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Promociones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Integrantes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="promoCarousel" class="carousel slide mt-4 container" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Imagenes/img1.PNG" class="d-block w-100" alt="Promoción 1">
+            </div>
+            <div class="carousel-item">
+                <img src="Imagenes/img2.png" class="d-block w-100" alt="Promoción 2">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <section class="Bienvenida mt-5">
+        <p class="TextBienvenida">
+            ¡Bienvenido/a! Nos alegra tenerte aquí. Este es tu espacio para aprender, crecer y descubrir todo lo que eres capaz de lograr. 🌱✨
+        </p>
+    </section>
+<section class="container my-5">
+    <h2 class="text-center mb-4" style="color:#9393e2;">Nuestro Equipo</h2>
+    <div class="row g-4 justify-content-center">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card text-center">
+                <img src="Imagenes/in1.png" class="card-img-top" alt="Integrante 1" style="height: 220px; object-fit: cover; object-position: center;">
+                <div class="card-body">
+                    <h5 class="card-title">Sarai Munera</h5>
+                    <p class="card-text">Diseñadora</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card text-center">
+                <img src="Imagenes/in2.png" class="card-img-top" alt="Integrante 2" style="height: 220px; object-fit: cover; object-position: center;">
+                <div class="card-body">
+                    <h5 class="card-title">Andrés Camilo Chavarriaga</h5>
+                    <p class="card-text">Programador</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card text-center">
+                <img src="Imagenes/in3.png" class="card-img-top" alt="Integrante 3" style="height: 220px; object-fit: cover; object-position: center;">
+                <div class="card-body">
+                    <h5 class="card-title">Ana Gómez</h5>
+                    <p class="card-text">Vaga 1</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card text-center">
+                <img src="Imagenes/in5.png" class="card-img-top" alt="Integrante 4" style="height: 220px; object-fit: cover; object-position: center;">
+                <div class="card-body">
+                    <h5 class="card-title">Sara Aguirre</h5>
+                    <p class="card-text">Jugadora estrella</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card text-center">
+                <img src="Imagenes/in4.png" class="card-img-top" alt="Integrante 5" style="height: 220px; object-fit: cover; object-position: center;">
+                <div class="card-body">
+                    <h5 class="card-title">Manuela Rendón</h5>
+                    <p class="card-text">Vaga 2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <footer class="text-center text-white mt-5 p-4">
+        <p>Proyecto desarrollado por el grupo Aventuras Lingüi © 2025</p>
+        <p>Curso: Desarrollo Web | Profesor: [Nombre del Profesor]</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
