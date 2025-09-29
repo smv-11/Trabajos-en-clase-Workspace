@@ -1,0 +1,58 @@
+table{
+    text-align: center;
+
+}
+td{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+#Morado {
+    background-color: #b042f5;
+}
+#Azul {
+    background-color: #425af5;
+}
+#Mangobiche {
+    background-color: #46fa4c;
+}
+#Rosado {
+    background-color: #f542b9;
+}
+#Naranja {
+    background-color: #f5b042;
+}
+#Verdelimón {
+    background-color: #7ef244;
+}
+#Rojoclaro{
+    background-color: #fa4664;
+}
+#Azulmarino {
+    background-color: #46d6fa; 
+}
+#Rojo {
+    background-color: #fa4646;
+}
+#Azulesmeralda {
+    background-color: #40e0d0;
+}
+#Cafe {
+    background-color: #8b4513;
+}
+#Gris {
+    background-color: #d3d3d3;
+}
+#Verde {
+    background-color: #006400;
+}
+#Vinotinto {
+    background-color: #8b0000;
+}
+#Azulrey {
+    background-color: #000080;
+}
+#Amarillooscuro {
+    background-color: #ffd700;
+}

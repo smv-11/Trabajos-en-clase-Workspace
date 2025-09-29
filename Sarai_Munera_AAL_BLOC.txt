@@ -1,0 +1,331 @@
+SARAI MUNERA VASQUEZ
+---------------------------------------------------------------------------------------------------------------------------
+30-Abril-2025
+
+https://github.com/TesiRomero/brigadapicassiana.git
+De este proyecto tomaria la página con la cual se elaboraron los juegos.
+
+https://github.com/AydeeRenteria/ortografia2.git
+De este proyecto tomaría cualquier mensaje motivacional al finalizar un módulo.
+
+https://github.com/javier-dotcom/App-Ortografia.git
+De este proyecto tomaría el código que permita seleccionar alguna opción.
+---------------------------------------------------------------------------------------------------------------------------
+7-Mayo-2025
+
+1. ¿Qué es HTTP?
+HTTP (Hypertext Transfer Protocol) es un protocolo sin estado de la capa de aplicación para sistemas de información de hipertexto distribuidos y colaborativos.
+HTTP se basa en el envio de mensajes sobre el protocolo de transporte TCP1.
+-El cliente envıa un mensaje de petición a un servidor, solicitando realizar una acción sobre un recurso determinado.
+-El servidor envıa un mensaje de respuesta a la petición del cliente.
+
+Las versiones más utilizadas actualmente son:
+- HTTP/1.1: versión utilizada mayoritariamente por mucho tiempo desde finales de los 90.
+- HTTP/2: mejora la eficiencia mediante codificación binaria de mensajes, compresión de cabeceras, multiplexación de multiples peticiones/respuestas sobre una única conexión TCP, 
+	peticiones iniciadas por el servidor, etc.
+-HTTP/3: presenta algunas mejoras de eficiencia similares a las de HTTP/2 y utiliza el protocolo QUIC sobre UDP en vez de TCP.
+
+2. ¿Qué hace el servidor cuando un usuario se loguea?
+Cuando un usuario se loguea en un servidor, el servidor realiza varias acciones para autenticarlo y brindarle acceso a los recursos a los que tiene derecho. Luego de esto,
+se hace una serie de pasos, como: El servidor recibe las credenciales del usuario, usualmente un nombre de usuario y una contraseña. El servidor verifica si las credenciales 
+proporcionadas son correctas. Si las credenciales son correctas, el servidor genera una sesión o un token JWT. El cliente recibe el token o identificador de sesión y lo almacena 
+en el navegador. Para las solicitudes subsiguientes que el usuario haga, el servidor verificará el token o la sesión enviada en las cabeceras de la petición. Además de la autenticación, 
+el servidor verificará si el usuario tiene permiso para acceder a ciertos recursos o realizar determinadas acciones. Una vez autenticado, el servidor puede devolver una respuesta positiva 
+que le dé acceso a la interfaz de usuario o los datos solicitados o un mensaje de error en caso de fallos de autenticación.
+
+3. ¿Qué es lo que pasa del lado del servidor?
+
+Del lado del servidor, se ejecuta una lógica específica al recibir la solicitud de login se conecta a la base de datos para buscar el usuario, 
+se utiliza una función de verificación de contraseñas (por ejemplo, bcrypt.compare) se maneja el control de errores como usuario no encontrado y se crea un mecanismo de autenticación 
+como una cookie de sesión o un token. Además de esto el servidor puede registrar la hora del login, el dispositivo como parte de auditoría o seguridad.
+---------------------------------------------------------------------------------------------------------------------------
+9-Mayo-2025
+
+1. Elementos del diagrama entidad relación.
+	-Entidades: Un concepto que define algo, como una persona, rol, evento, concepto u objeto, que puede tener información sobre sí mismo almacenada en una base de datos relacional. 	
+	Muchos estilos de diagramas de relación representan las entidades como rectángulos.
+
+	-Atributos: Son cualidades, propiedades y características que definen una entidad o tipo de entidad. En un diseño normal, se muestran como óvalos y se colocan junto a la entidad 
+	correspondiente en un diagrama entidad relación algunos tipos son:
+	-Atributos simples: No se pueden simplificar ni dividir en más atributos. 
+	-Atributos compuestos: Se compilan a partir de otros atributos, que pueden o no ser simples. Una dirección es un atributo compuesto que contiene un número de calle, nombre de la
+	calle, ciudad, etc...
+	-Atributos derivados: Se calculan en función de otros atributos. 
+	-Atributos multivalor: Pueden tener más de un valor por registro, mientras que un atributo de valor único no puede.
+	-Relaciones: son las líneas conectadas que unen las entidades en un diagrama entidad relación. Indican cómo las entidades dentro de un diagrama entidad relación se asocian entre sí. 
+	Si las entidades son sustantivos, y los atributos son adjetivos, entonces las relaciones son verbos. Normalmente las relaciones se representan como diamantes. 
+	
+	-Cardinalidad:Define cuántas entidades participan en una relación:
+	-Las relaciones uno a uno (1:1): Indican que un registro dentro de una entidad solo puede ser referenciado por un registro en la otra entidad.
+	-Las relaciones uno a muchos (1:M): Representan situaciones en las que cada registro dentro de una entidad se relaciona con múltiples registros en otra entidad. 
+	-Las relaciones de muchos a muchos (M:M): Muestran que se pueden conectar uno o más registros dentro de ambas entidades.
+
+	-Entidades débiles:las entidades débiles existen solo como resultado o consecuencia de otra entidad. Rectángulo doble.
+
+	- Atributos de relación: Atributos que pertenecen a una relación, no a las entidades.
+
+2. Conceptos:
+-clave primaria: esta concepto de clave primaria en bases de datos se refiere a un atributo o conjunto de atributos que identifican de manera única cada fila o registro dentro de una tabla.
+-clave foranea: es un concepto fundamental en las bases de datos relacionales y se refiere a un atributo en una tabla que se utiliza para establecer una relación con la clave primaria de otra tabla.
+-clave compuesta:es un concepto en bas´{ññpes de datos que hace referencia a una clave primaria que está formada por más de un atributo. Como asi? en vez de utilizar un solo atributo para
+	              identificar de manera única cada registro, se usan varios atributos combinados para garantizar la unicidad de los registros dentro de una tabla.
+
+3. Tipos de datos en sql.
+Numérico
+	-INT: Datos numéricos enteros con una capacidad máxima de almacenamiento de 4 bytes.
+	-BIGINT: Datos numéricos enteros con una capacidad máxima de almacenamiento de 8 bytes.
+	-SMALLINT: Datos numéricos enteros con una capacidad máxima de almacenamiento de 2 bytes.
+	-TINYINT: Datos numéricos enteros con una capacidad máxima de almacenamiento de 1 bytes.
+	-BIT: Tipo de dato que solo puede almacenar los valores 0 (FALSO), 1 (VERDADERO).
+	-DECIMAL: Datos numéricos con precisión y escalas fijas.
+	-MONEY: Tipo de dato que representa valores monetarios o de moneda con una capacidad máxima de 8 bytes.
+	-SMALLMONEY: Tipo de dato que representa valores monetarios o de moneda con una capacidad máxima de 4 bytes.
+	-FLOAT: Datos numéricos aproximados de coma flotante. 
+Sin Unicode
+	-CHAR: Para el almacenamiento de caracteres alfanuméricos de tamaño fijo. 
+	-VARCHAR: Para el almacenamiento de caracteres alfanuméricos de tamaño variable. 
+	-TEXT: Para el almacenamiento de valores de gran tamaño de datos de longitud fija y variable de caracteres y binarios no Unicode. 
+
+4. Las 3 formas normales de bases de datos.
+	-Forma 1 (1NF):Es la forma más básica de organización. Esta primera forma normal requiere que cada columna en una tabla de base de datos contenga valores atómicos, es decir, 
+	valores que no pueden descomponerse en partes más pequeñas. Además, cada tabla debe tener una clave primaria única que identifique de manera unívoca cada fila.
+	-Forma 2 (2NF):Con esta forma normal se asegura que cada pieza de información se ubique en el lugar adecuado. Cada columna no clave de una tabla debe valerse completamente 
+	de la clave primaria. Esto significa que no puede haber dependencias parciales de la clave primaria en ninguna columna no clave..
+	Forma 3 (3NF):En este caso se precisa que todas las columnas no clave de una tabla dependan directamente de la clave primaria y no de otras columnas no clave.
+	Se trata de asegurar que no haya información innecesaria o redundante en la base de datos. Si una información puede ser determinada por otra pieza de la información que no es la 
+	clave principal, entonces no se precisa en la tabla actual.
+---------------------------------------------------------------------------------------------------------------------------
+14-Mayo-2025
+
+1. Tipos de datos en mysql,dando una explicación (con tus propias palabras, maximos 2 renglones por tipo de dato).
+	1. Tipos Numéricos
+		-Enteros (sin decimales)
+		-TINYINT: Entero muy pequeño (1 byte). Rango: -128 a 127 (sin signo: 0 a 255).
+		-SMALLINT: Entero pequeño (2 bytes). Rango: -32,768 a 32,767.
+		-MEDIUMINT: Entero medio (3 bytes). Rango aproximado: -8 millones a 8 millones. (Solo en MySQL)
+		-INT / INTEGER: Entero estándar (4 bytes). Rango: -2,147,483,648 a 2,147,483,647.
+		-BIGINT: Entero grande (8 bytes). Rango: ±9 cuatrillones aprox.
+
+	Números decimales y de punto flotante
+		-DECIMAL(p, s) o NUMERIC(p, s): Números exactos con precisión fija. Ideal para cantidades monetarias.
+		-FLOAT(p): Número en punto flotante de precisión simple. Menor precisión, mayor rendimiento.
+		-DOUBLE / DOUBLE PRECISION: Número en punto flotante de doble precisión.
+		-MONEY: Valor monetario con precisión fija (8 bytes). Común en SQL Server.
+		-SMALLMONEY: Versión más pequeña de MONEY (4 bytes). También de SQL Server.
+
+	Otros numéricos
+		-BIT(n): Almacena valores binarios. Por defecto 0 o 1. Se puede especificar hasta n bits.
+		-BOOLEAN / BOOL: Tipo lógico. En MySQL es un alias de TINYINT(1), donde 0 = falso y 1 = verdadero.
+
+	2. Tipos de Fecha y Hora
+		-DATE: Almacena solo la fecha. Formato: YYYY-MM-DD.
+		-DATETIME: Almacena fecha y hora. Formato: YYYY-MM-DD HH:MM:SS.
+		-TIMESTAMP: Similar a DATETIME, pero se ajusta automáticamente según la zona horaria del servidor.
+		-TIME: Solo la hora. Formato: HH:MM:SS.
+		-YEAR: Solo el año. Formato: YYYY.
+
+	3. Tipos de Texto
+	De longitud fija
+		-CHAR(n): Cadena de texto de longitud fija. Si la cadena es más corta, se completa con espacios.
+
+	De longitud variable
+		-VARCHAR(n): Cadena de texto de longitud variable. Hasta 65,535 bytes en total (incluyendo codificación y longitud).
+
+	Textos largos
+		-TINYTEXT: Hasta 255 caracteres.
+		-TEXT: Hasta 65,535 caracteres.
+		-MEDIUMTEXT: Hasta 16 millones de caracteres.
+		-LONGTEXT: Hasta 4 mil millones de caracteres.
+
+	4. Tipos Binarios
+		-TINYBLOB: Datos binarios muy pequeños (hasta 255 bytes).
+		-BLOB: Datos binarios estándar (hasta 65,535 bytes).
+		-MEDIUMBLOB: Datos binarios medianos (hasta 16 MB).
+		-LONGBLOB: Datos binarios muy grandes (hasta 4 GB).
+
+	5. Tipos Especiales
+		-ENUM('valor1', 'valor2', ...): Lista de valores posibles. Solo se puede seleccionar uno.
+		-SET('valor1', 'valor2', ...): Lista de valores predefinidos. Se pueden seleccionar varios a la vez.
+
+2. Listar los tipos de datos que va a usar mi proyecto.
+Para el proyecto se utilizara tinytext, datetime, smallint y float.
+---------------------------------------------------------------------------------------------------------------------------
+21-Mayo-2025
+
+Codigo SQL
+
+	-CREATE TABLE grupo ( id_grupo INT AUTO_INCREMENT PRIMARY KEY, nombre_grupo VARCHAR(100) NOT NULL );
+
+	-CREATE TABLE estudiante( id_estudiante INT PRIMARY KEY, nombre VARCHAR(100) NOT NULL, apellido vARCHAR(100) NOT NULL, id_grupo INT, FOREIGN KEY(id_grupo)
+	REFERENCES grupo(id_grupo) );
+
+	-CREATE TABLE salon ( id_salon INT PRIMARY KEY, numero VARCHAR(10) NOT NULL, ubicacion VARCHAR(100) );
+
+	-CREATE TABLE aseo ( id_aseo INT AUTO_INCREMENT PRIMARY KEY, id_estudiante INT NOT NULL, id_salon INT NOT NULL, fecha DATE NOT NULL, rol VARCHAR(50) NOT NULL, 
+	FOREIGN KEY(id_estudiante) REFERENCES estudiante(id_estudiante), FOREIGN KEY (id_salon)REFERENCES salon(id_salon) );
+
+	INSERT INTO grupo (nombre_grupo) VALUES ('sexto');
+	INSERT INTO grupo (nombre_grupo) VALUES ('septimo');
+	INSERT INTO grupo (nombre_grupo) VALUES ('octavo');
+	INSERT INTO grupo (nombre_grupo) VALUES ('noveno');
+	INSERT INTO estudiante(id_estudiante, nombre, apellido, id_grupo) VALUES (11, 'pepito', 'perez', 4);
+	INSERT INTO estudiante(id_estudiante, nombre, apellido, id_grupo) VALUES (12, 'Manu', 'Lopera', 4);
+	INSERT INTO estudiante(id_estudiante, nombre, apellido, id_grupo) VALUES (13, 'Ana', 'Gomez', 4);
+	INSERT INTO estudiante(id_estudiante, nombre, apellido, id_grupo) VALUES (15, 'Cami', 'Gerrero', 4);
+	INSERT INTO estudiante(id_estudiante, nombre, apellido, id_grupo) VALUES (10, 'Sarai', 'Munera', 4);
+	INSERT INTO estudiante(id_estudiante, nombre, apellido, id_grupo) VALUES (18, 'Valentina', 'Saldarriaga', 3);
+	INSERT INTO estudiante(id_estudiante, nombre, apellido, id_grupo) VALUES (33, 'Juan', 'Salgado', 3);
+	INSERT INTO estudiante(id_estudiante, nombre, apellido, id_grupo) VALUES (25, 'Daniela', 'Torres', 3);
+	INSERT INTO estudiante(id_estudiante, nombre, apellido, id_grupo) VALUES (26, 'Thomas', 'Usuga', 3);
+	INSERT INTO estudiante(id_estudiante, nombre, apellido, id_grupo) VALUES (16, 'Juanes', 'Duque', 3);
+	INSERT INTO estudiante(id_estudiante, nombre, apellido, id_grupo) VALUES (2, 'Miguel', 'Villa', 2), (99, 'Daniel', 'Fonseca', 2), (77, 'Jeronimo', 'Arroyave', 2), (44, 'Dylan', 'Ocampo', 2), 
+								           (88, 'Andres', 'Cardenas', 2);
+	INSERT INTO estudiante(id_estudiante, nombre, apellido, id_grupo) VALUES (34, 'Sara', 'Aguirre', 1), (87, 'Johan', 'Vasquez', 1), (98, 'Angie', 'Rendon', 1), (23, 'Juan', 'Agudelo', 1), (20, 'Pablo', 'Possada', 1);
+	INSERT INTO salon(id_salon, numero, ubicacion) VALUES (1, '11-101', 'capilla 11 primer piso'), (2, '12-102', 'capilla 12 segundo piso'), (3, '13-103', 'capilla 13 tercer piso'), (4, '14-104', 'capilla 14 cuarto piso'), 
+						             (5, '15-105', 'capilla 15 quinto piso'), (6, '16-106', 'capilla 16 sexto piso');
+
+---------------------------------------------------------------------------------------------------------------------------
+28-Mayo-2025
+
+1. 3 formas de inclusión de estilos en HTML
+
+	-Estilo inline (en el código fuente):Con este método, las instrucciones de diseño se integran directamente en el código fuente mediante una etiqueta de estilo.
+				    En el ejemplo siguiente, el encabezamiento H1 debe aparecer en azul y con un tamaño de letra de 14:
+<h1 style="color:blue; font-size:14px;">Esto es un encabezado</h1>
+
+
+	-Al principio del documento HTML: En este caso, se incluye el CSS en la cabecera del documento HTML. La etiqueta de estilo se convierte así en parte del elemento de cabecera y 
+				       se aplica a todo el archivo. En este caso, se incluye el CSS en la cabecera del documento HTML. La etiqueta de estilo se convierte así en parte del elemento de
+ 				       cabecera y se aplica a todo el archivo.
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {color:blue; font-size:14px;}
+</style>
+</head>
+<body>
+<h1> Esto es un encabezado </h1>
+<p>Esto es un párrafo</p>
+</body>
+</html>
+
+
+	-En un archivo CSS externo:Este es posiblemente el mejor método para enlazar CSS en HTML. Un sitio web suele constar de muchas páginas, por lo que tiene sentido guardar las 
+			             instrucciones de diseño en un archivo separado. Esto permite una separación limpia entre el contenido y el diseño y facilita el mantenimiento.
+			             En el siguiente ejemplo, el archivo CSS se llama stylesheet.css.
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<h1> Esto es un encabezado </h1>
+<p>Esto es un párrafo</p>
+</body>
+</html>
+
+	
+2. Que son direcciones relativas de archivos y como funcionan cuando se incluye una imagen o cualquier otro archivo al HTML
+	Una dirección relativa es una forma de indicar la ubicación de un archivo como una imagen, un CSS, etc. en relación a la ubicación del archivo HTML que lo está llamando.
+¿Cómo funcionan?
+Por ejemplo en tu HTML:
+<img src="imagenes/foto.jpg" alt="Foto">
+Se esta diciendo que la imagen foto.jpg está dentro de una carpeta llamada imagenes y esa carpeta está en la misma ubicación donde está el archivo HTML.
+
+3. Buscar que son elementos de bloque (block) y elementos en linea (inline) en HTML. 
+	 -Elementos de bloque: Un elemento de bloque HTML es aquel que ocupa todo el ancho de la página o del elemento que lo contiene. Algunos ejemplos son:
+<p> 
+<h1>hasta<h6> 
+<ul>
+	-Elementos en línea: Un elemento en línea HTML solo ocupa el ancho de su contenido. Algunos ejemplos son:
+<a> 
+<b>
+<i>
+<img>
+---------------------------------------------------------------------------------------------------------------------------
+06-Junio-2025
+
+-consultar que es el modelo de caja en CSS(BOXMODEL)
+	
+	-Contenido (content):Es el área donde va lo que quieres mostrar: texto, imágenes, formularios, etc.
+	-Relleno (padding):Es el espacio entre el contenido y el borde. Sirve para que el contenido no esté pegado al borde.
+	-Borde (border):Es la línea que rodea al padding y al contenido. Puedes darle color, grosor y estilo.
+	-Márgen (margin):Es el espacio exterior al borde. Se usa para separar un elemento de otros.
+
+-¿Que sistemas de medida se usan en CSS?
+
+Las unidades de medida en CSS nos ayudan a dimensionar los elementos de nuestra página web.
+	UNIDADES DE MEDIDA  ABSOLUTAS:hacen referencia a las unidades que no cambian, esas que en todos lo contextos son iguales. 
+
+	-in: hace referencia a las pulgadas, que son iguales a 2.54cm.
+	-cm: se refiere a los centímetros.
+	-mm: hace referencia a los milímetros.
+	-q: se refiere a un cuarto de la unidad mm. 1q=0.248mm.
+	-pt: un punto es igual a 1/72 de una pulgada o 0.35mm.
+	-pc: una pica es igual a 12 puntos, o sea 4.23mm.
+	-px: esta etiqueta se refiere a los píxeles que, aunque son absolutos (0.26mm), también son relativos a la densidad de la pantalla.
+
+	UNIDADES DE MEDIDA RELATIVAS:dependen del elemento o factor al que hagan referencia. Aunque pueden ser inicialmente más complejas, algunos prefieren las unidades de medidas de css relativas porque los tamaños de los elementos dependen el uno del otro. 
+
+	-em:Esta unidad es relativa al tamaño de letra o font size establecida en el navegador. Su nombre es em porque el tamaño de letra se basa en el tamaño de la letra eme. A menos que haya sido modificada por el usuario, normalmente este tamaño es de 16px.
+
+	-ex:Esta unidad es relativa a la altura de la «x» del elemento. También se conoce por ser más o menos la mitad del tamaño de la fuente del navegador o 0.5em.
+
+	-ch:Conocido en inglés como zero width, esta unidad de medida es relativa al tamaño del ancho del cero en la fuente del navegador.
+   
+	-%:Esta unidad es relativa al tamaño del elemento padre.
+
+	-rem:La unidad rem o root em es similar a la unidad em, pero, en vez de tomar como base el tamaño de letra del navegador, la unidad em toma el tamaño base del documento HTML. Este tamaño se personaliza bajo la etiqueta :root {font-size}. De este modo, podemos usar rem para dimensionar nuestros elementos con un múltiplo del tamaño base.
+
+	UNIDADES DEL VIEWPORT: que es el espacio o trozo de pantalla donde se renderiza y se muestra la página web. Estas unidades sirven para dimensionar la pantalla y organizar los elementos dentro de esta.
+
+	-vw:Como sigla de la unidad en inglés viewport width, esta unidad es relativa al ancho del viewport.
+
+	-vh:Como sigla de la unidad en inglés viewport height, esta unidad es relativa a la altura del viewport.
+
+	-vmin:Esta unidad vmin css , también conocida como viewport minimum, es relativa al factor que sea más pequeño entre el ancho y al alto del viewport.
+
+	vmax:Esta unidad, conocida como viewport maximum, es relativa al factor que sea más grande entre el ancho y el alto del viewport. Junto con vmin, esta unidad puede ser muy útil si queremos que nuestros diseños sean flexibles y se adapten al tamaño visible de la página web.
+---------------------------------------------------------------------------------------------------------------------------
+11-Julio-2025
+
+Consulta
+¿Qué es diseño responsivo?
+	El diseño responsivo o reactivo es una forma de crear páginas web que se adaptan solas al tamaño de la pantalla del dispositivo que estés usando. Es decir, no importa si estás viendo la página desde un celular, una tablet, una laptop, una compu de escritorio o incluso 
+	una tele inteligente, el sitio se va a ver bien y va a ser fácil de leer y usar sin que tengas que estar haciendo zoom o desplazándote de lado.La idea es que el contenido (texto, imágenes, menús, etc.) se acomode automáticamente dependiendo del tamaño de la pantalla. Por ejemplo, 
+	si estás en el celular, los menús pueden cambiar de lugar o las imágenes hacerse más pequeñas para que todo quepa y se vea ordenado.
+
+¿Qué es un grid en diseño resposivo?
+	Un grid (o cuadrícula) en diseño responsivo es una estructura de líneas imaginarias que se usa para organizar y acomodar el contenido de una página web. Ayuda a que los textos, imágenes y otros elementos se vean ordenados y alineados, sin importar el tamaño de la pantalla. En el diseño 
+	responsivo, este grid es fluido, lo que significa que puede ajustarse automáticamente según el ancho de la pantalla. Por ejemplo, en una computadora puede tener varias columnas, pero en un celular esas columnas se pueden apilar una debajo de la otra para que todo siga siendo fácil de leer y usar.
+	El grid hace más fácil que el diseño sea flexible y se vea bien en cualquier dispositivo.
+
+¿Qué dispositivos se deben de tener en cuenta en diseño resposivo?
+	En el diseño responsivo se deben tener en cuenta todos los dispositivos desde los que las personas pueden entrar a una página web. Esto incluye:
+	-Teléfonos inteligentes
+	-Tablets
+	-Computadoras portátiles 
+	-Computadoras de escritorio
+	-Televisores inteligentes 
+	-Relojes inteligentes (en algunos casos)
+	
+¿Aplica el diseño responsivo según en navegado?
+	El diseño responsivo no depende del navegador sino del tamaño de la pantalla del dispositivo. La mayoría de los navegadores actuales como:
+	-Google Chrome
+	-Firefox
+	-Safari
+	-Opera
+	
+¿Qué es flexBox en diseño responsivo?
+
+	Flexbox  es una herramienta de CSS que se usa para acomodar y alinear los elementos de una página web de forma más fácil y flexible. Con Flexbox puedes controlar:
+
+	-La dirección de los elementos (en fila o en columna).
+
+	-El espacio entre ellos.
+
+	-Cómo se alinean (centrado, a la derecha, a la izquierda, etc.).
+
+	-Cómo se acomodan cuando el espacio cambia (por ejemplo, al hacer la ventana más chica).
+---------------------------------------------------------------------------------------------------------------------------

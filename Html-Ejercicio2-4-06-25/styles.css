@@ -1,0 +1,20 @@
+#Encabezado {
+background-color: black;
+color: white;
+}
+
+td {
+    height: 100px;
+    width: 100px;
+}
+
+.fila-azul {
+    background-color: rgb(161, 162, 255);
+}
+.fila-gris{
+    background-color: rgb(109, 109, 109);
+}
+Table{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
